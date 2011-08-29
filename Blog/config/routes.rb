@@ -3,8 +3,12 @@ Blog::Application.routes.draw do
   resources :posts do 
     resources :comments
   end
+  
+  resources :users 
 
   get "home/index" => 'home#index'
+  get "home/user" => 'users#index'
+  get "home/user/new" => 'users#new'
     
   # The priority is based upon order of creation:
   # first created -> highest priority.
