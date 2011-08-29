@@ -4,8 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name
       t.string :lastname
       t.text :address
-      t.references :post
-      t.references :comment
+      t.references :posts
 
       t.timestamps
     end
