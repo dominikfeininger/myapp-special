@@ -4,6 +4,6 @@ class Post < ActiveRecord::Base
  validates :title, :presence => true,
                     :length => { :minimum => 5 }
  has_many :comments 
- has_one :user                  
+ belongs_to :user                  
 
 end
