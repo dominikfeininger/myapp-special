@@ -5,7 +5,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :lastname
       t.text :address
       t.references :posts
-
+      t.references :comments
+      
       t.timestamps
     end
   end

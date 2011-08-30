@@ -5,6 +5,7 @@ Blog::Application.routes.draw do
   end
   
   resources :users 
+  resources :posts
 
   get "home/index" => 'home#index'
   get "home/user" => 'users#index'

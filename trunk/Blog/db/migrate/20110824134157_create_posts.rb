@@ -1,12 +1,11 @@
 class CreatePosts < ActiveRecord::Migration
   def self.up
     create_table :posts do |t|
-      t.references :users
-      #t.string :name
       t.string :title
       t.text :content
-
-
+      t.references :users
+      t.references :comments
+      
       t.timestamps
     end
   end
