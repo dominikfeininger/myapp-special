@@ -41,7 +41,7 @@ class PostsController < ApplicationController
   # POST /posts.xml
   def create
     @post = Post.new(params[:post])
-    User.find_by_name()
+    #User.find_by_name()
     
     respond_to do |format|
       if @post.save
