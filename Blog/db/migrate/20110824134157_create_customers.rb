@@ -14,3 +14,4 @@ class CreateCustomers < ActiveRecord::Migration
     drop_table :customers
   end
 end
+ 
