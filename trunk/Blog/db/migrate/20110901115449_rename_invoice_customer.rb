@@ -4,6 +4,6 @@ class RenameInvoiceCustomer < ActiveRecord::Migration
   end
 
   def self.down
-        rename_column :invoices, :customer_id, :customers_id
+    rename_column :invoices, :customer_id, :customers_id
   end
 end
