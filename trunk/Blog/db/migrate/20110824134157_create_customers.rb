@@ -6,10 +6,14 @@ class CreateCustomers < ActiveRecord::Migration
       t.references :addresses
       t.references :invoices
 
+	  
+	    
       t.timestamps
     end
   end
 
+  
+  
   def self.down
     drop_table :customers
   end
